@@ -1,0 +1,199 @@
+html {
+    font-size: 18px;
+}
+
+body {
+    background-image: url("../pictures/b4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    text-shadow: 2px 2px 8px #FF0000;
+    font-size: 7rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 8px #ff00ea;
+}
+
+.chooseBox {
+    margin-left: 7.3rem;
+    position: relative;
+    top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.chooseBox p {
+    display: inline-block;
+    text-shadow: 2px 2px 8px #66ff00;
+}
+
+.chooseBox button {
+    display: inline-block;
+}
+
+.cell {
+    background-color: white;
+}
+
+#tables {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.table {
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    height: 10.55rem;
+    width: 10.59rem;
+    position: relative;
+}
+
+.table p {
+    position: absolute;
+    font-size: 1.25rem;
+    top: -3rem;
+    text-shadow: 2px 2px 8px #e5ff00;
+    font-weight: bold;
+}
+
+.cell {
+    border: 1px solid black;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.marked {
+    box-sizing: border-box;
+    border-radius: 100%;
+    padding: 0.2rem;
+}
+
+.markYellow {
+    background-color: yellow;
+    transition: 0.5s;
+}
+
+.afterMarked {
+    background-color: red;
+    transition: 2.5s;
+    transition-delay: 0.8s;
+}
+
+.markRed {
+    background-color: red;
+    transition: 2s;
+}
+
+.verticalHead {
+    position: absolute;
+    top: -4.1rem;
+    right: 1.8rem;
+    width: 1.5rem;
+}
+
+.ballContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 85px;
+    background-image: url("../pictures/ball.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 6rem;
+    position: relative;
+    top: 0.5rem;
+}
+
+.ballContainer span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav p {
+    font-size: 1.3rem;
+    box-sizing: border-box;
+    margin: 0 0 0 7.3rem;
+    font-weight: bolder;
+    position: relative;
+    text-shadow: 2px 2px 8px #00fff2;
+}
+
+li {
+    display: inline-block;
+    padding: 0.2rem;
+    font-size: 1.1rem;
+    margin-right: 0.2rem;
+    background-color: rgba(74, 37, 240, 0.9);
+    border: 2px solid black;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+li:hover {
+    background-color: rgba(74, 37, 240, 0.5);
+}
+
+li:active {
+    color: rgb(211, 79, 79);
+    border: 1px solid rgb(211, 79, 79);
+}
+
+ul {
+    box-sizing: border-box;
+    margin-left: 5rem;
+    margin-bottom: 0;
+}
+
+li:last-child {
+    margin-left: 1.1rem;
+    background-color: rgb(248, 80, 220, 0.9);
+    padding: 0.22rem;
+}
+
+li:last-child:hover {
+    background-color: rgb(248, 80, 220, 0.5);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.topMenu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width:672px) {
+    li:last-child {
+        margin-left: 0;
+        margin-top: 0.2rem;
+    }
+    .ballContainer {
+        margin-right: 1rem;
+    }
+}

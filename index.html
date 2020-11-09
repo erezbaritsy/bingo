@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+</head>
+
+<body>
+    <h1>Bingo !</h1>
+    <div class="chooseBox">
+        <p>Number of players: </p>
+        <select id="players" name="players">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        <button onclick="playerNum()">Enter</button>
+    </div>
+    <div class="flex">
+        <nav>
+            <div class="topMenu">
+                <p>Game speed:</p>
+                <ul>
+                    <li onclick="gameSpeed('normal')">Normal</li>
+                    <li onclick="gameSpeed('fast')">Fast</li>
+                    <li onclick="gameSpeed('fastest')">Very fast</li>
+                    <li class="right" onclick="restart()">Restart</li>
+                </ul>
+            </div>
+            <div class=" ballContainer">
+                <span id="ball">10</span>
+            </div>
+
+        </nav>
+        <div id="tables">
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="resources/js/bingo.js"></script>
